@@ -1,1 +1,2 @@
 # Customer_Churn_Predictive_Model
+This project is a machine learning solution designed to predict customer churn based on various customer attributes and behaviors. The model provides actionable insights to help businesses identify customers likely to leave and take preventive measures. It uses advanced preprocessing techniques, including encoding categorical variables, and produces both class predictions and confidence probabilities.
