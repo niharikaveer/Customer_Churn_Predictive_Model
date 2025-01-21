@@ -20,24 +20,36 @@ Customer churn is a critical metric for any business, as retaining existing cust
   - NumPy (Numerical operations)
   - Scikit-learn (Machine learning algorithms)
   - Matplotlib/Seaborn (Data visualization)
-  - Jupyter Notebook (For prototyping and exploratory data analysis)
-
+  
 ## Dataset
-The dataset used for this project typically contains customer information and transaction data. It includes various customer attributes such as demographics, subscription details, and usage patterns. Additionally, the dataset includes a target variable indicating whether the customer has churned (left) or is still actively using the service.
-The dataset is often available from publicly accessible sources or can be created based on company-specific customer data. If you're using a publicly available dataset, include the dataset link here.
+The dataset used for this project contains customer information and transaction data. It includes various customer attributes such as demographics, subscription details, and usage patterns. The dataset includes a target variable indicating whether the customer has churned (left) or is still actively using the service.
 
-## Features
-- **Customer Profiling**: The model analyzes customer attributes like age, gender, subscription type, and monthly spend to predict the likelihood of churn.
-- **Data Preprocessing**:
-  - **Handling Categorical Data**: Categorical variables such as subscription type and gender are encoded into numerical values through techniques like **One-Hot Encoding** or **Label Encoding**.
-  - **Handling Missing Values**: Missing data is managed through imputation techniques, where missing values are filled using the mean, median, or other appropriate values.
-  - **Feature Scaling**: Numerical features such as tenure and monthly spend are scaled to ensure uniformity across the dataset, making it easier for machine learning models to learn.
+### Dataset Features:
+Here are the attributes available in the dataset:
 
-- **Churn Prediction**: The model predicts the likelihood of a customer churning or staying. It provides both binary predictions (churn/no churn) as well as confidence probabilities, offering insights into the certainty of the predictions.
+- **CustomerID**: Unique identifier for each customer.
+- **Gender**: The gender of the customer (e.g., Male, Female).
+- **SeniorCitizen**: Indicates whether the customer is a senior citizen (1: Yes, 0: No).
+- **Partner**: Whether the customer has a partner (e.g., Yes, No).
+- **Dependents**: Whether the customer has dependents (e.g., Yes, No).
+- **Tenure**: The number of months the customer has been with the company.
+- **PhoneService**: Whether the customer subscribes to phone service (e.g., Yes, No).
+- **MultipleLines**: Whether the customer has multiple lines (e.g., Yes, No, No phone service).
+- **InternetService**: Type of internet service the customer subscribes to (e.g., DSL, Fiber optic, No internet service).
+- **OnlineSecurity**: Whether the customer has online security (e.g., Yes, No, No internet service).
+- **OnlineBackup**: Whether the customer has online backup (e.g., Yes, No, No internet service).
+- **DeviceProtection**: Whether the customer has device protection (e.g., Yes, No, No internet service).
+- **TechSupport**: Whether the customer has tech support (e.g., Yes, No, No internet service).
+- **StreamingTV**: Whether the customer has streaming TV (e.g., Yes, No, No internet service).
+- **StreamingMovies**: Whether the customer has streaming movies (e.g., Yes, No, No internet service).
+- **Contract**: Type of contract the customer has (e.g., Month-to-month, One year, Two year).
+- **PaperlessBilling**: Whether the customer subscribes to paperless billing (e.g., Yes, No).
+- **PaymentMethod**: Method of payment the customer uses (e.g., Electronic check, Mailed check, Bank transfer, Credit card).
+- **MonthlyCharges**: The amount the customer pays per month.
+- **TotalCharges**: The total amount the customer has paid.
+- **Churn**: The target variable indicating whether the customer has churned (1: Churned, 0: Not Churned).
 
-- **Customer Retention Insights**: By identifying at-risk customers, businesses can take timely actions to improve retention strategies. The model offers valuable insights into customer behavior and helps optimize marketing efforts.
-
-- **Model Selection**: The model uses classification algorithms like **Logistic Regression**, **Random Forest**, or any other suitable classifier to predict customer churn. The choice of model depends on the dataset's characteristics and performance metrics.
+The dataset is typically available from publicly accessible sources or can be created based on company-specific customer data.
 
 ## Contributing
 We welcome contributions to improve the Customer Churn Predictive Model. If you would like to contribute, please fork the repository and submit a pull request with your proposed changes.
